@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 13 Bloque 1_V2</title>
+</head>
+<body>
+    <script>
+        function numero(){
+        let num1;
+        num1=parseInt(prompt("Introduce el primer número"));
+        let num2;
+        num2=parseInt(prompt("Introduce el segundo número"));
+        let num3;
+        num3=parseInt(prompt("Introduce el tercer número"));
+       
+        if (num1==num2 & num2==num3) {
+            return"El resultado de su suma y multiplicación es "+((num1+num2)*num3);
+        }
+        else {
+            return"Los números no son iguales";
+        }
+        }
+        let Resultado=numero();
+        document.write(Resultado);
+    </script>
+</body>
+</html>

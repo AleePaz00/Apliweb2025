@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 14 Bloque 1_V2</title>
+</head>
+<body>
+    <script>
+      function numero(salary, antique){
+        if (salary<500) {
+            if (antique<10) {
+                return"Tu sueldo es de "+(salary*0.05+salary);
+            }
+            else {
+                return "Tu sueldo es de "+(salary*0.20+salary);
+            }
+         }
+         else {
+            return("Tu sueldo es de "+salary);
+        }
+        }
+        sueldo=parseInt(prompt("Introduce tu sueldo"));
+        antiguedad=parseInt(prompt("Introduce tus años de antigüedad"));
+        let Resultado=numero(sueldo, antiguedad);
+        document.write(Resultado);
+    </script>
+</body>
+</html>

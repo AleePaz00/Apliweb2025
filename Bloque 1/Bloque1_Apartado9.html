@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 9 Bloque 1</title>
+</head>
+<body>
+    <script>
+        let nota, contador, sumadenotas=0, promedio;
+        for(contador=1;contador<4;contador++)
+        {
+        nota=parseInt(prompt("Introduce la primera nota"));
+        sumadenotas =sumadenotas+nota;
+        }
+        promedio=sumadenotas / 3;
+
+        console.log("El contador es de "+contador);
+
+        console.log(sumadenotas);
+
+        console.log(promedio);
+        
+        if (promedio>=4)
+        {   document.write("Tu promedio ha sido regular");
+        }else{
+            document.write("Has reprobado");
+        }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 10 Bloque 1_V2</title>
+</head>
+<body>
+    <script>
+          function numero(numberPositive){
+        if (numberPositive >=1 && numberPositive <=99) {
+            if (numberPositive >=10) {
+                return"El número"+numberPositive+ " tiene dos dígitos";
+            }
+            else {
+                return"El número"+numberPositive+ " tiene un dígito";
+            }
+        } else {
+            return"Debe ser un número positivo comprendido entre el 1 y el 99";
+        }
+    }
+    numeroPositivo=parseInt(prompt("Introduce un numero positivo del 1 al 99: "));
+    let Resultado=numero(numeroPositivo);
+    document.write(Resultado);
+    </script>
+</body>
+</html>

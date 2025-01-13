@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 12 Bloque 1_V2</title>
+</head>
+<body>
+    <script>
+          function digito(){
+        let numero
+        numero=parseInt(prompt("Introduce un numero de hasta 3 cifras: "));
+        if (numero >= 100) {
+            return"El número "+numero+" tiene 3 cifras";
+        } else if (numero >= 10) {
+            return"El número "+numero+" tiene 2 cifras";
+        } else {
+            return"El número "+numero+" tiene 1 cifra";
+        }
+    }
+    let Resultado=digito();
+    document.write(Resultado);
+    </script>
+</body>
+</html>

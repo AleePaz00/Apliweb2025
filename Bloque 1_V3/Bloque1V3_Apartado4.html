@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 4 Bloque 1_V2</title>
+</head>
+<body>
+    <script>
+        let numero1 = parseInt(prompt("Ingrese el primer valor: "));
+        let numero2 = parseInt(prompt("Ingrese el segundo valor: "));
+        let numero3 = parseInt(prompt("Ingrese el tercer valor: "));
+        let numero4 = parseInt(prompt("Ingrese el cuarto valor: "));
+        
+        function suma(n1, n2, n3, n4) {
+            let resultadoSuma = n1 + n2 + n3 + n4;
+            return "La suma de los cuatro valores es: " + resultadoSuma + "<br>";
+        }
+
+        function producto(n1, n2, n3, n4) {
+            let resultadoProducto = n1 * n2 * n3 * n4;
+            return "El producto de los cuatro valores es: " + resultadoProducto;
+        }
+
+        let Resultado = suma(numero1, numero2, numero3, numero4);
+        document.write(Resultado);
+        
+        let Resultado2 = producto(numero1, numero2, numero3, numero4);
+        document.write(Resultado2);
+    </script>
+</body>
+</html>

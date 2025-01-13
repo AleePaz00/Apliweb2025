@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 6 Bloque 1_V2</title>
+</head>
+<body>
+    <script>
+        function clave(clue1, clue2){
+        
+        if (clue1==clue2){
+            return "Las claves coinciden";
+        }
+        else{
+            return"Las claves no coinciden";
+        }
+    }
+    clave1=parseInt(prompt("Introduzca la clave"));
+    clave2=parseInt(prompt("Vuelva a intoducir la clave: "));
+    let Resultado=clave(clave1, clave2);
+    document.write(Resultado);
+    </script>
+</body>
+</html>

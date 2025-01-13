@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 6 Bloque 2</title>
+</head>
+<body>
+    <a href="Actividad6"></a>
+    <script>
+ function generarTabla(tabla) {
+  let conta = tabla;
+  for (let number = 1; number <= 12; number++) {
+    document.write(conta + " ");
+    conta = conta + tabla;
+  }
+}
+function tabla() {
+  let tabla = parseInt(prompt("Ingrese un valor del 1 al 10:", ""));
+  generarTabla(tabla);
+}
+tabla();
+    </script>
+</body>
+</html>

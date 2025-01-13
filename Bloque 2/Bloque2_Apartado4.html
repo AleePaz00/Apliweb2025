@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 4 Bloque 2</title>
+</head>
+<body>
+    <a href="Actividad4"></a>
+    <script>
+         function pedirValores() {
+  let suma = 0;
+  let valor;
+  do {
+    valor = parseInt(prompt("Ingrese un valor (9999 para finalizar)"));
+    if (valor !== 9999) {
+      suma += valor;
+    }
+  } while (valor !== 9999);
+  return suma;
+}
+function mostrarResultados(suma) {
+  document.write("Valor acumulado total: " + suma + "<br>");
+  
+  if (suma > 0) {
+    document.write("El valor acumulado es mayor a cero");
+  } else if (suma === 0) {
+    document.write("El valor acumulado es cero");
+  } else {
+    document.write("El valor acumulado es menor a cero");
+  }
+}
+let sumaTotal = pedirValores();
+mostrarResultados(sumaTotal);
+    </script>
+</body>
+</html>

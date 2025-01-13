@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Switch</title>
+</head>
+<body>
+    <script>
+        function traducción(mostrarPalabra) {
+            let texto;
+            switch (mostrarPalabra) {
+            case 'casa':
+                texto="House"
+                break;
+            case 'mesa':
+                texto="Table"   
+                break;
+            case 'perro':
+                texto="Dog"    
+                break;
+            case 'gato':
+                texto="Cat" 
+                break;
+            default:
+                texto=0
+        }
+        return texto
+    }
+    palabra=prompt("Introduce una palabra de estas para ver su traducción: casa, mesa, perro o gato")
+        let resultado=traducción(palabra);
+        document.write(resultado);
+
+    </script>
+</body>
+</html>

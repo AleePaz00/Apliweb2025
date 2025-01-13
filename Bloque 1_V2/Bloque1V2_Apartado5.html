@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 5 Bloque 1_V2</title>
+</head>
+<body>
+    <script>
+        function suma(){
+        let precio;
+        let cantidad;
+        precio=prompt("Ingrese el precio del producto: ");
+        precio=parseInt(precio);
+        cantidad=prompt("Ingrese la cantidad de producto/s: ")
+        cantidad=parseInt(cantidad);
+        let importe
+        importe=precio*cantidad
+        return "El improte que debe abonar es: "+importe+"€"
+        }
+        let Resultado=suma();
+        document.write(Resultado);
+    </script>
+</body>
+</html>
