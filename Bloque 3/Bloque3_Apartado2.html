@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+</head>
+<body>
+    <script>
+        var cadena;
+        function mitad(cadena)
+         {
+          var f;
+            document.write('Mitad inicial de la frase:');
+            for (f = 0; f < cadena.length / 2; f++) {
+
+                document.write(cadena.charAt(f));
+            }
+            document.write('<br><br>');
+        }
+        function ultimoCaracter(cadena) 
+        {
+            document.write('Ultimo carácter:');
+
+            document.write(cadena.charAt(cadena.length - 1));
+
+            document.write('<br><br>');
+        }
+        function imprimirInverso(cadena) 
+        {  var f;
+            document.write('Forma inversa:');
+
+            for (f = 0; f < cadena.length; f++) {
+
+                document.write(cadena.charAt(cadena.length - f - 1));
+            }
+            document.write('<br><br>');
+        }
+        function imprimirConGuion(cadena) {
+            var f;
+            document.write('Separados por un  guión:');
+            for ( f = 0; f < cadena.length; f++) {
+
+                document.write(cadena.charAt(f) + '-');
+            }
+            document.write('<br><br>');
+        }
+        function cantidadVocales(cadena)
+        {
+             var cant = 0, f;
+            for (f = 0; f < cadena.length; f++) {
+                if (cadena.charAt(f) == 'a' || cadena.charAt(f) == 'e' || cadena.charAt(f) == 'i' || cadena.charAt(f) == 'o' ||cadena.charAt(f) == 'u' ||cadena.charAt(f) == 'A' ||cadena.charAt(f) == 'E' ||cadena.charAt(f) == 'I' ||cadena.charAt(f) == 'O' ||cadena.charAt(f) == 'U') 
+                    {
+                    cant++;
+                    }
+            }
+
+            document.write('Cantidad de vocales:' + cant);
+        }
+        cadena = prompt('Ingrese una palabra o frase:');
+        document.write(cadena);
+        document.write('<br><br>');
+        mitad(cadena);
+        ultimoCaracter(cadena);
+        imprimirInverso(cadena);
+        imprimirConGuion(cadena);
+        cantidadVocales(cadena);
+
+    </script>
+</body>
+</html>

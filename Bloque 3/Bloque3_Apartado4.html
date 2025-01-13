@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartado 4 Bloque 3</title>
+</head>
+<body>
+  <form>
+        <p>Ingrese el nombre:<input type="text" id="nombre"></p>
+        <p>Ingrese el apellido:<input type="text" id="apellido"></p>
+        <p><input type="button" value="Concatenar datos ingresados" onClick="concatenar()"></p>
+        <p><input type="text" id="resultado"></p>
+    </form>
+
+    <script>
+        function concatenar() {
+            let nombre = document.getElementById("nombre").value;
+            let apellido = document.getElementById("apellido").value;
+            document.getElementById("resultado").value = nombre + apellido;
+        }
+    </script>
+
+</body>
+</html>
