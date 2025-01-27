@@ -3,28 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartado 9 Bloque 3</title>
+    <title>Document</title>
 </head>
 <body>
+    <h1>EJERCICIOS JAVASCRIPT 2024/2025 VALERIA RAMÍREZ HERRERA</h1>
 
     <form>
-        Ingrese nombre:
-        <input type="text" id="nombre"><br> Ingrese mail:
-        <input type="text" id="mail"><br> Comentarios:
-        <br>
-        <textarea id="comentarios" rows="20" cols="100"></textarea><br>
-        <input type="button" value="confirmar" onClick="verificar()">
+        <label for="nombre">Introduce su nombre</label><br>
+        <input type="text" id="nombre"> <br> <br>
+        <label for="correo">Introduce su correo</label><br>
+        <input type="email" id="correo"> <br> <br>
+        <label for="comentarios">Comentario:</label><br>
+        <textarea id="comentarios"></textarea> <br> <br>
+        <input type="button" value="Mostrar datos introducidos" onclick="mostrarDatos()">
     </form>
-
-    <script>
-        function verificar() {
-            let nombre = document.getElementById('nombre').value;
-            let mail = document.getElementById('mail').value;
-            let comentarios = document.getElementById('comentarios').value;
-            alert(nombre + '\n' + mail + '\n' + comentarios);
-        }
+    <script src="Bloque3_Apartado9.js">
     </script>
-
 </body>
-
 </html>

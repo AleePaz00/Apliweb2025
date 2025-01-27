@@ -5,32 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apartado 6 Bloque 3</title>
 </head>
-    <body>
-        <script>
-            function calcularprecio()
-            {
-    
-              var seleccion=document.getElementById('Pizza');
-              var cantidad=document.getElementById('cant').value
-              var precioPizza=document.getElementById('PrecioTotal')
-              var precioSeleccionado=seleccion.options[seleccion.selectedIndex].value;
-              var total= cantidad * precioSeleccionado
-              document.getElementById('total').value=total;
-            }
-    
-            </script>
-    
-            <form>
-              Cantidad: <input type="text" id="cant"><br>
-              Pizza: <select id="Pizza" onchange="calcularprecio()">
-                <option value="4">Queso</option>
-                <option value="6">Jamon y Queso</option>
-                <option value="10">Especial</option>
-              </select><br>
-              <input type="button" id="botontotal" value="total" onclick="calcularprecio()"><br>
-    
-              Precio Total:<input type="text" id="total"><br>
-    
-            </form>
-    </body>
+<body>
+
+    <form>
+        <p><select id="pizzas" onChange="cambiarColor()">
+            <option value="4 $">Queso</option>
+            <option value="6 $">Jamon y Queso</option>
+            <option value="10 $">Epecial</option>
+        </select></p>
+        <p>Cantidad de pizzas:<input type="text" id="text1"></p>
+        <p>Pizza seleccionada:<input type="text" id="text2"></p>
+        <p> Precio:<input type="text" id="text3"></p>
+    </form>
+
+    <script src="Bloque3_Apartado6.js">
+    </script>
+
+</body>
 </html>
